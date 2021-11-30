@@ -1,0 +1,38 @@
+CREATE DATABASE arpdb; 
+
+CREATE TABLE tbl_reservation(
+	r_no INT PRIMARY KEY AUTO_INCREMENT,
+	r_name VARCHAR(50) NOT NULL,
+	r_mail VARCHAR(50) NOT NULL,
+	r_start_location VARCHAR(50) NOT NULL,
+	r_end_location VARCHAR(50) NOT NULL,
+	r_start_date VARCHAR(50) NOT NULL,
+	r_end_date VARCHAR(50) NOT NULL,
+	r_adult_cnt INT NOT NULL,
+	r_infant_cnt INT NOT NULL,
+	r_child_cnt INT NOT NULL,
+	r_seat_type VARCHAR(50) NOT NULL,
+	r_reg_date DATETIME,
+	r_mod_date DATETIME
+);
+
+CREATE TABLE tbl_member(
+	m_no INT PRIMARY KEY AUTO_INCREMENT,
+	m_mail VARCHAR(50) NOT NULL,
+	m_pw VARCHAR(50) NOT NULL,
+	m_reg_date DATETIME,
+	m_mod_date DATETIME
+);
+
+
+
+CREATE TABLE tbl_admin(
+	a_no INT PRIMARY KEY AUTO_INCREMENT,
+	a_mail VARCHAR(50) NOT NULL,
+	a_pw VARCHAR(50) NOT NULL,
+	a_reg_date DATETIME,
+	a_mod_date DATETIME
+);
+
+INSERT INTO tbl_admin(a_mail, a_pw, a_reg_date, a_mod_date)
+VALUES('admin@gmail.com', '1234', NOW(), NOW());

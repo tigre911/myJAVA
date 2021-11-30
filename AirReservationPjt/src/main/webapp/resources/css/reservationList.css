@@ -1,0 +1,122 @@
+.top_menu_wrap {
+	width: 100%; height: 40px;
+	background-color: #f4f0ff;
+}
+
+.top_menu_wrap .content {
+	width: 900px; height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+}
+
+.top_menu_wrap .content ul {
+	overflow: hidden;
+}
+
+.top_menu_wrap .content ul li {
+	float: right;
+	padding: 0 10px;
+}
+
+.top_section_wrap {
+	width: 100%;
+}
+
+.top_section_wrap .content {
+	width: 1000px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.top_section_wrap .content .formWrap {
+	width: 100%;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.top_section_wrap .content .formWrap .reservationLink {
+	width: 90%;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.top_section_wrap .content .formWrap .reservationLink a{
+	text-decoration: underline;
+}
+
+.top_section_wrap .content .formWrap table {
+	width: 90%;
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+.top_section_wrap .content .formWrap table tr {
+	
+}
+
+.top_section_wrap .content .formWrap table tr td {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.top_section_wrap .content .formWrap table tr td:nth-child(2n-1) {
+	width: 15%;
+	background-color: #f9f9ee;
+	text-align: right;
+}
+
+.top_section_wrap .content .formWrap table tr td:nth-child(2n) {
+	text-align: left;
+}
+
+.top_section_wrap .content .formWrap table tr:first-child td {
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.top_section_wrap .content .formWrap table tr td input {
+	width: 88%;
+	padding: 5px;
+}
+
+.top_section_wrap .content .formWrap table tr td select {
+	width: 93%;
+	padding: 5px;
+}
+
+.top_section_wrap .content .formWrap table tr:last-child td {
+	text-align: center;	
+}
+
+.top_section_wrap .content .formWrap table tr:last-child td input {
+	width: 130px;
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid #dedede;
+	border-radius: 20px;
+	font-size: 1.0em;
+}
+
+.footer_menu_wrap {
+	width: 100%; height: 100px;
+	background-color: #f4f0ff;
+}
+
+.footer_menu_wrap .content {
+	width: 900px; height: 100px;
+	line-height: 100px;
+	margin: 50px auto;
+	text-align: center;
+	font-size: .9em;
+}
+
+
+
+
+
+
+
+
+
