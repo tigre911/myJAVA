@@ -18,5 +18,8 @@
 		UPDATE member SET username=#{username}, tel=#{tel}, email=#{email}
 		WHERE userid=#{userid} AND userpwd=#{userpwd}
 	</update>
+	<select id="idCheck" resultType="int">
+		SELECT COUNT(userid) cnt FROM member WHERE userid=#{param1}
+	</select>
 </mapper>
 

@@ -6,6 +6,12 @@ function memberCheck(){
 		userid.focus();
 		return false;
 	}
+	//////////////////////////////////////////////////////
+	if(document.getElementById("idchk").value=='N'){
+		alert("아이디 중복검사 필요");
+		return false;
+	}
+	//////////////////////////////////////////////////////
 	//비밀번호
 	let userpwd = document.getElementById("userpwd");
 	let userpwd2 = document.getElementById("userpwd2");

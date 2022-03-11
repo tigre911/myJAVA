@@ -33,4 +33,9 @@ public class MemberServiceImpl implements MemberService {
 		return dao.memberUpdate(vo);
 	}
 
+	@Override
+	public int idCheck(String userid) {
+		return dao.idCheck(userid);
+	}
+
 }

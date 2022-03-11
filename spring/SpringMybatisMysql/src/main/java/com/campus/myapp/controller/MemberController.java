@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.campus.myapp.service.MemberService;
@@ -98,5 +99,11 @@ public class MemberController {
     	return mav;
 	}
     
-    
+    //아이디 중복검사
+    @PostMapping("memberIdCheck")
+    @ResponseBody
+    public int idCheck(String userid) {
+    	int cnt = service.idCheck(userid);
+    	return cnt;
+    }
 }

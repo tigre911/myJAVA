@@ -15,6 +15,37 @@
 	}
 </style>	
 <script src="/myapp/js/member.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		//아이디 중복검사
+		$("#userid").keyup(function(){
+			var userid = $("#userid").val();
+			if(userid!=''&& userid.length>=6){
+				var url = "/myapp/member/memberIdCheck";
+				$.ajax({
+					url : url,
+					data : "userid=" + userid,
+					type: "POST",
+					success : function(result){
+						if(result>0){//사용불가능
+							$("#chk").html("시도 불가.");
+							$("#idchk").val("N");
+							$("#chk").css("color","red")
+						}else{//사용가능
+							$("#chk").html("가능.");
+							$("#idchk").val("Y");
+							$("#chk").css("color","blue")
+						}
+					}
+				});
+			}else{//사용불가
+				$("#chk").html("시도 불가.");	
+				$("#idchk").val("N");
+				$("#chk").css("color","red")
+			}
+		});
+	});
+</script>
 <!-- top bottom jspf 에 html 태그및 css 다있기 때문에 중간에 작성할 요소만 적어준다 -->
 <div class="container">
 	<h1>회원 가입 폼</h1>
@@ -23,7 +54,8 @@
 		<li>아이디</li>
 		<li>
 			<input type='text' name='userid' id='userid' placeholder='아이디 입력'/>
-			<input type='button' value='아이디 중복 확인'>
+			<input type='button' value='아이디 중복 확인'><span id='chk'></span>
+			<input type="text" id='idchk' value="N" style="visibility:hidden">
 		</li>
 		<li>비밀번호</li>
 		<li><input type="password" name="userpwd" id="userpwd" placeholder="비밀번호 입력"></li>
