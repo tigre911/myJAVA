@@ -6,7 +6,7 @@ body, ul, li{
 	list-style-type: none;
 }
 
-a:link, a:visited, a:hover{
+.mainMenu a:link, .mainMenu a:visited, .mainMenu a:hover{
 	text-decoration: none;
 	color: white;
 }
