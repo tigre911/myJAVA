@@ -12,22 +12,37 @@ import com.campus.myapp.vo.PagingVO;
 
 @Service
 public class BoardServiceImpl implements BoardService {
-	@Inject
-	BoardDAO dao;
-	
+   @Inject
+   BoardDAO dao;
+   
+   @Override
+   public int boardInsert(BoardVO vo) {
+      return dao.boardInsert(vo);
+   }
+
+   @Override
+   public List<BoardVO> boardList(PagingVO pVO) {
+      return dao.boardList(pVO);
+   }
+
+   @Override
+   public int totalRecord(PagingVO pVO) {
+      return dao.totalRecord(pVO);
+   }
+
 	@Override
-	public int boardInsert(BoardVO vo) {
-		return dao.boardInsert(vo);
+	public BoardVO boardSelect(int no) {
+		return dao.boardSelect(no);
 	}
 
 	@Override
-	public List<BoardVO> boardList(PagingVO pVO) {
-		return dao.boardList(pVO);
+	public void hitCount(int no) {
+		dao.hitCount(no);
 	}
 
 	@Override
-	public int totalRecord() {
-		return dao.totalRecord();
+	public int boardUpdate(BoardVO vo) {
+		return dao.boardUpdate(vo);
 	}
 
 }
