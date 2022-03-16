@@ -23,4 +23,7 @@ public interface BoardDAO {
 	
 	//글 수정
 	public int boardUpdate(BoardVO vo);
+	
+	//글 삭제
+	public int boardDelete(int no, String userid); 
 }

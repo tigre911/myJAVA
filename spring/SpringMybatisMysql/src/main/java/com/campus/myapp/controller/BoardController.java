@@ -134,6 +134,26 @@ public class BoardController {
       }
       return entity;
    }
+   
+   //글 삭제
+   @GetMapping("boardDel")
+   public ModelAndView boardDel(int no, HttpSession session) {
+	   String userid = (String)session.getAttribute("logId");
+	   
+	   int result = service.boardDelete(no, userid);
+	   
+	   ModelAndView mav = new ModelAndView();
+	   
+	   if(result>0) {//삭제
+		   mav.setViewName("redirect:boardList");
+	   }else {//삭제못함
+		   mav.addObject("no",no);
+		   mav.setViewName("redirect:boardView");
+	   }
+	   return mav;
+   }
+   
+   
    // 글 수정 메세지
    public String getEditFailMessage() {
       String msg = "<script>";
@@ -149,5 +169,7 @@ public class BoardController {
       msg += "</script>";
       return msg;
    }
+   
+   
    
 }
