@@ -30,7 +30,7 @@
 	<!-- 파일 업로드를 처리하기 위한 MultipartResolver객체를 생성해주면, DispacherServlet이 참조하여 파일업로드 수행 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- 파일 업로드 최대 크기 설정(byte단위) -1: 제한 없음 -->
-        <property name="maxInMemorySize" value="-1"></property>
+        <property name="maxUploadSize" value="-1"></property>
         <!-- 기본 인코딩 타입 지정 -->
         <property name="defaultEncoding" value="UTF-8"></property>
     </bean>

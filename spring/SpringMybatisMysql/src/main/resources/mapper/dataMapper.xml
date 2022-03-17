@@ -3,5 +3,14 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  <mapper namespace="com.campus.myapp.dao.DataDAO">
- 
+ 	<insert id="dataInsert">
+ 		INSERT INTO databoard(subject, content, userid, filename1, filename2) VALUES(#{subject}, #{content}, #{userid}, #{filename1}, #{filename2})
+ 	</insert>
+ 	<select id="dataSelectAll" resultType="com.campus.myapp.vo.DataVO">
+        select no, subject, userid, date_format(writedate, '%m-%d %H:%i') writedate, filename1, filename2
+        from databoard order by no desc
+    </select>
+    <select id="dataView" resultType="com.campus.myapp.vo.DataVO">
+    	SELECT no, subject, userid, content, writedate, filename1, filename2 FROM databoard WHERE no=${param1}
+    </select>
  </mapper>
