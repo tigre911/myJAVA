@@ -1,6 +1,6 @@
 package com.campus.myapp.vo;
 
-public class DataVO {
+public class DataVO extends Object{
 	private int no;
 	private String userid;
 	private String subject;
@@ -10,10 +10,12 @@ public class DataVO {
 	private String filename1;
 	private String filename2;
 	
-	private String[] delFile;
+	// 삭제하 파일명 담을 변수
+	private String delFile[];
+	
 	
 	public String toString() {
-		return userid+", "+subject+", "+content+", "+filename1+", "+filename2;
+		return userid+", "+subject+", "+content+", "+ filename1+",  "+filename2;
 	}
 	
 	public int getNo() {
@@ -66,6 +68,9 @@ public class DataVO {
 	public void setDelFile(String[] delFile) {
 		this.delFile = delFile;
 	}
+	
+	
+	
 	
 	
 }

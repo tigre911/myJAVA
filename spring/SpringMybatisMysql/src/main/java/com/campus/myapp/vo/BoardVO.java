@@ -10,6 +10,15 @@ public class BoardVO {
 	private String writedate;
 	private String ip;
 	
+	private int[] noList;
+	
+	
+	public int[] getNoList() {
+		return noList;
+	}
+	public void setNoList(int[] noList) {
+		this.noList = noList;
+	}
 	public int getNo() {
 		return no;
 	}

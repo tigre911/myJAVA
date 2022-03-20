@@ -21,9 +21,12 @@ public interface BoardDAO {
 	//조회수 증가
 	public void hitCount(int no);
 	
-	//글 수정
+	//글수정
 	public int boardUpdate(BoardVO vo);
+	//						수정할 정보가 vo 안에들어가 있음
 	
-	//글 삭제
-	public int boardDelete(int no, String userid); 
+	//글삭제
+	public int boardDelete(int no, String userid);
+	
+	public int boardMultiDelete(BoardVO vo);
 }

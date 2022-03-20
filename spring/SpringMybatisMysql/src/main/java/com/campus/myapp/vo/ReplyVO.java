@@ -7,6 +7,7 @@ public class ReplyVO {
 	private String coment;
 	private String writedate;
 	
+	
 	public int getReplyno() {
 		return replyno;
 	}
