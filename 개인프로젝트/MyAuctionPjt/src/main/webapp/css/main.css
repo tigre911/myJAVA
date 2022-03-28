@@ -1,0 +1,97 @@
+
+.login_menu_wrap ul{
+    overflow: hidden;
+    height: 50px;
+}
+
+.login_menu_wrap ul li{
+    float: right;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+	/*padding: 10px;*/
+    margin-right: 10px;
+}
+
+.login_menu_wrap ul li:first-child{
+    background-color: #c2e9fb;
+}
+
+.login_menu_wrap ul li:last-child{
+    background-color: #f6d365;
+}
+
+.search_menu_wrap{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 140px;
+}
+
+#searchBox {
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    border-style: solid; border-width: 2px 2px 2px 8px; word-break: break-all;
+    border-color: #ccc;
+    font-family: 돋움;
+}
+
+#searchButton {
+    width: 38px;
+    height: 38px;
+}
+
+.section_menu_wrap{
+	width: 1000px;
+    height: 500px;
+    margin: 20px 150px;
+}
+
+.section_menu_wrap .content {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Jua', sans-serif;
+}
+
+.section_menu_wrap .content .products ul{
+    overflow: hidden;    
+}
+
+.section_menu_wrap .content .products ul li{
+    width: 200px;
+    float: left;
+}
+
+#p_img{
+    width: 170px;
+    height: 170px;
+    vertical-align: middle;
+}
+
+#p_time {
+    text-align: center;
+    color: red;
+}
+
+.page_menu_wrap {
+    width: 1000px;
+	height: 70px;
+    padding-top: 20px;
+}
+
+.page_menu_wrap .content ul {
+    text-align: center;
+}
+
+.page_menu_wrap .content ul li {
+    display: inline-block;
+    width: 40px;
+    border: solid #ecb164;
+    background-color: rgb(228, 236, 236);
+    border-radius: 30%;
+}
+
+.footer_menu_wrap {
+	height: 100px;
+	background-color: #f0dcb2;
+}
