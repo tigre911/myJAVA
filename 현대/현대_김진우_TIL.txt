@@ -43,4 +43,4 @@ Class 이름은 대문자로 시작 Pascal Case
 
 data type (자료형)
 
-daya structure (자료 구조)
+data structure (자료 구조)
