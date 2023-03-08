@@ -29,3 +29,18 @@ A class is a blueprint or prototype from which objects are created.
 상속은 powerful and natural mechanism for organizing and structureing your software.
 
 What is package?
+
+===================================================
+03/08
+
+static 정적 매서드?
+
+Class 이름은 대문자로 시작 Pascal Case
+변수는  camelCase
+메소드는 camelCase
+
+컴퓨터에게 데이터를 줄때 자료형을 명시해야한다.
+
+data type (자료형)
+
+daya structure (자료 구조)
