@@ -44,3 +44,10 @@ Class 이름은 대문자로 시작 Pascal Case
 data type (자료형)
 
 data structure (자료 구조)
+
+====================================================
+03/09
+
+if문과 switch 문의 차이
+
+hashing 이 무엇?
